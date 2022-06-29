@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.card__heading {
+  font-size: rem(16);
+}
+
+.card__advice {
+  font-size: rem(28);
+  background-color: #000;
+}

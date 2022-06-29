@@ -1,0 +1,17 @@
+{
+  "name": "advice-generator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Lucas Weidas",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2",
+    "sass": "^1.53.0"
+  }
+}

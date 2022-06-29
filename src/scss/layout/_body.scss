@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr min-content;
+  background-color: $clr-dark-blue;
+}
