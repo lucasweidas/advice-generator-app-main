@@ -1,10 +1,19 @@
 @use '../abstracts' as *;
 
 .card__heading {
-  font-size: rem(16);
+  font-size: clamp(rem(12), 2.5vw, rem(14));
+  letter-spacing: 0.313em;
+  text-transform: uppercase;
+  color: $clr-neon-green;
 }
 
 .card__advice {
-  font-size: rem(28);
-  background-color: #000;
+  font-size: clamp(rem(24), 5vw, rem(28));
+  color: $clr-light-cyan;
+}
+
+.attribution {
+  font-size: rem(14);
+  line-height: 2em;
+  color: $clr-light-cyan;
 }

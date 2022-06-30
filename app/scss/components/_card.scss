@@ -1,5 +1,46 @@
 @use '../abstracts' as *;
 
 .card {
-  background-color: $clr-grayish-blue;
+  width: min(100% - rem(32), rem(540));
+  position: relative;
+  text-align: center;
+  background-color: $clr-dark-grayish-blue;
+  border-radius: rem(10);
+  box-shadow: 0 rem(40) rem(30) rem(-30) rgba(black, 0.15);
+  padding: clamp(rem(42), 7.5vw, rem(50)) clamp(rem(24), 5vw, rem(46)) clamp(rem(64), 10vw, rem(72));
+  margin-inline: auto;
+
+  &__advice {
+    padding-block: clamp(rem(28), 5vw, rem(30)) clamp(rem(24), 6vw, rem(40));
+  }
+
+  &__divider {
+    width: min(100%, rem(444));
+    height: rem(16);
+    display: block;
+    margin-inline: auto;
+    object-fit: cover;
+  }
+
+  &__button {
+    width: rem(64);
+    height: rem(64);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: rem(-32);
+    left: 50%;
+    background-color: $clr-neon-green;
+    border: none;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow 300ms;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 rem(30) $clr-neon-green;
+    }
+  }
 }
