@@ -7,11 +7,19 @@
   background-color: $clr-dark-grayish-blue;
   border-radius: rem(10);
   box-shadow: 0 rem(40) rem(30) rem(-30) rgba(black, 0.15);
-  padding: clamp(rem(42), 7.5vw, rem(50)) clamp(rem(24), 5vw, rem(46)) clamp(rem(64), 10vw, rem(72));
+  padding: clamp(rem(42), 7.5vw, rem(50)) clamp(rem(24), 5.5vw, rem(46)) clamp(rem(64), 10vw, rem(72));
   margin-inline: auto;
 
   &__advice {
     padding-block: clamp(rem(28), 5vw, rem(30)) clamp(rem(24), 6vw, rem(40));
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
   }
 
   &__divider {
